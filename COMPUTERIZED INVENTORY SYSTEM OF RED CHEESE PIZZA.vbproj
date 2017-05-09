@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EA7387B-3BAC-4B27-8E07-60ADCCAA97F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RED_CHEESE_PIZZA.My.MyApplication</StartupObject>
+    <RootNamespace>RED_CHEESE_PIZZA</RootNamespace>
+    <AssemblyName>RED_CHEESE_PIZZA</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\Desktop\appmy\</InstallUrl>
+    <ProductName>Sales and Inventory System</ProductName>
+    <PublisherName>FoodHubb</PublisherName>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RED_CHEESE_PIZZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RED_CHEESE_PIZZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>foodhub_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RED_CHEESE_PIZZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\COMPUTERIZED INVENTORY SYSTEM OF RED CHEESE PIZZA.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RED_CHEESE_PIZZA.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\COMPUTERIZED INVENTORY SYSTEM OF RED CHEESE PIZZA.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1F33F8D41F68634BE9EDBD1CFC3408AB3F9A33D2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>COMPUTERIZED INVENTORY SYSTEM OF RED CHEESE PIZZA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>RED_CHEESE_PIZZA.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>RED_CHEESE_PIZZA.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.8\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN\AddProduct.Designer.vb">
+      <DependentUpon>AddProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\AddProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Add_Raw_Material.Designer.vb">
+      <DependentUpon>Add_Raw_Material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Add_Raw_Material.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Add_Prod.Designer.vb">
+      <DependentUpon>Add_Prod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Add_Prod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\About_Us.Designer.vb">
+      <DependentUpon>About_Us.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\About_Us.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Available_Product.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Available_Product.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Available_Prod_Report.Designer.vb">
+      <DependentUpon>Available_Prod_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Available_Prod_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Bar.vb" />
+    <Compile Include="ADMIN\CellClickableQuant.Designer.vb">
+      <DependentUpon>CellClickableQuant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\CellClickableQuant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\CusOrderProduct.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CusOrderProduct.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Expired_Raw_Mats_Report.Designer.vb">
+      <DependentUpon>Expired_Raw_Mats_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Expired_Raw_Mats_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Expiring_Prod.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Expiring_Prod.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Key_Shortcut.Designer.vb">
+      <DependentUpon>Key_Shortcut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Key_Shortcut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Print_Products.Designer.vb">
+      <DependentUpon>Print_Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Print_Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Print_Product_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Print_Product_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Print_Raw_Material.Designer.vb">
+      <DependentUpon>Print_Raw_Material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Print_Raw_Material.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Print_Raw_Mats.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Print_Raw_Mats.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Prod_Print_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prod_Print_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Prod_Report.Designer.vb">
+      <DependentUpon>Prod_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Prod_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Sales_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sales_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CONNECTION\fillDataGridView.vb" />
+    <Compile Include="ADMIN\Modall.Designer.vb">
+      <DependentUpon>Modall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Modall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ModifyRaw.Designer.vb">
+      <DependentUpon>ModifyRaw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\ModifyRaw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\PrintOrderProd.Designer.vb">
+      <DependentUpon>PrintOrderProd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\PrintOrderProd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CONNECTION\Addquery.vb" />
+    <Compile Include="CONNECTION\Calling_Header.vb" />
+    <Compile Include="CONNECTION\Connection.vb" />
+    <Compile Include="CONNECTION\Declarations.vb" />
+    <Compile Include="CONNECTION\Fill_Unit.vb" />
+    <Compile Include="CONNECTION\Filtering.vb" />
+    <Compile Include="CONNECTION\Nav.vb" />
+    <Compile Include="CONNECTION\reportquery.vb" />
+    <Compile Include="CONNECTION\User.vb" />
+    <Compile Include="CONNECTION\User_Account.Designer.vb">
+      <DependentUpon>User_Account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONNECTION\User_Account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Import_and_Export.Designer.vb">
+      <DependentUpon>Import_and_Export.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Import_and_Export.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Critical_Raw_Mats_Report.Designer.vb">
+      <DependentUpon>Critical_Raw_Mats_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Critical_Raw_Mats_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Critical_Raw_Materials.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Critical_Raw_Materials.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LOGIN USER\Loginfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN USER\Loginfrm.Designer.vb">
+      <DependentUpon>Loginfrm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADMIN\AddProduct.resx">
+      <DependentUpon>AddProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Add_Raw_Material.resx">
+      <DependentUpon>Add_Raw_Material.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Add_Prod.resx">
+      <DependentUpon>Add_Prod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\About_Us.resx">
+      <DependentUpon>About_Us.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Available_Product.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Available_Product.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Available_Prod_Report.resx">
+      <DependentUpon>Available_Prod_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\CellClickableQuant.resx">
+      <DependentUpon>CellClickableQuant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\CusOrderProduct.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CusOrderProduct.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Expired_Raw_Mats_Report.resx">
+      <DependentUpon>Expired_Raw_Mats_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Expiring_Prod.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Expiring_Prod.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Key_Shortcut.resx">
+      <DependentUpon>Key_Shortcut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Modall.resx">
+      <DependentUpon>Modall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\ModifyRaw.resx">
+      <DependentUpon>ModifyRaw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\PrintOrderProd.resx">
+      <DependentUpon>PrintOrderProd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Print_Products.resx">
+      <DependentUpon>Print_Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Print_Product_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Print_Product_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Print_Raw_Material.resx">
+      <DependentUpon>Print_Raw_Material.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Print_Raw_Mats.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Print_Raw_Mats.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Prod_Print_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Prod_Print_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Prod_Report.resx">
+      <DependentUpon>Prod_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Sales_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Sales_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONNECTION\User_Account.resx">
+      <DependentUpon>User_Account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Import_and_Export.resx">
+      <DependentUpon>Import_and_Export.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Critical_Raw_Mats_Report.resx">
+      <DependentUpon>Critical_Raw_Mats_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\Critical_Raw_Materials.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Critical_Raw_Materials.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN USER\Loginfrm.resx">
+      <DependentUpon>Loginfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LAY-OUT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\LAY-OUTk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ligature-symbols_2-11-0_delete_256_0_ecf0f1_none.png" />
+    <None Include="Resources\logo81.jpg" />
+    <None Include="Resources\logo8.jpg" />
+    <None Include="Resources\logo7.jpg" />
+    <None Include="Resources\logo6.jpg" />
+    <None Include="images\timer.png" />
+    <None Include="Resources\font-awesome_4-6-3_edit_256_0_ecf0f1_none2.png" />
+    <None Include="Resources\font-awesome_4-6-3_edit_256_0_ecf0f1_none1.png" />
+    <None Include="Resources\font-awesome_4-6-3_edit_256_0_ecf0f1_none.png" />
+    <None Include="images\ty.png" />
+    <None Include="images\ribbon.png" />
+    <None Include="Resources\records.png" />
+    <None Include="images\remov2.jpg" />
+    <None Include="images\remove1.jpg" />
+    <None Include="images\LAY-OUt11.png" />
+    <None Include="images\maintenances.png" />
+    <None Include="images\backup_filed.png" />
+    <None Include="images\records.png" />
+    <None Include="images\order_product.png" />
+    <None Include="images\recieve.jpg" />
+    <None Include="images\deletebtn.png" />
+    <None Include="images\deletebtnpopup.png" />
+    <None Include="images\deletebtnpopu.png" />
+    <None Include="images\login.png" />
+    <None Include="images\logins.png" />
+    <None Include="images\LoginBackground.png" />
+    <None Include="images\Background.png" />
+    <None Include="images\asterisk.png" />
+    <None Include="images\markquote.png" />
+    <None Include="images\critical.png" />
+    <None Include="images\Backgroundr.png" />
+    <None Include="images\print.png" />
+    <None Include="images\bar.png" />
+    <None Include="images\expired.png" />
+    <None Include="images\BackgroundPIZZA.png" />
+    <None Include="images\expiredRAW.png" />
+    <None Include="images\criticalraw.png" />
+    <None Include="images\BACKIMAGE.png" />
+    <None Include="images\RAWMATERIAL.png" />
+    <None Include="images\PRODUCTS.png" />
+    <None Include="images\PRODUCTRAWMATS.png" />
+    <None Include="images\bart.png" />
+    <None Include="images\baary.png" />
+    <None Include="images\LAY-OUt12.png" />
+    <None Include="images\AVAILABLE.png" />
+    <None Include="images\LIST.png" />
+    <None Include="images\cancelpng.png" />
+    <None Include="images\logs.png" />
+    <None Include="images\bac.jpg" />
+    <None Include="images\des.png" />
+    <None Include="images\desr.png" />
+    <None Include="images\desrt.png" />
+    <None Include="images\dertd.png" />
+    <None Include="images\order_bar.png" />
+    <None Include="images\logo4.jpg" />
+    <None Include="images\logo5.jpg" />
+    <Content Include="foodhub_logo.ico" />
+    <None Include="images\deleteshow.png" />
+    <None Include="images\deletehide.png" />
+    <Content Include="images\red_cheese_pizza_.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CREW\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="foodhub_logo.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="images\red_cheese_pizza_.ico">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
