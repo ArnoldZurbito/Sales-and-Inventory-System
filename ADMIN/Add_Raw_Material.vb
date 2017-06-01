@@ -181,9 +181,9 @@ Public Class Add_Raw_Material
                             objconn.Open()
                             With objcmd
                                 .Connection = objconn
-                                .CommandText = "Insert Into raw_material_table(RAW_ID,RAW_NAME)  values (NULL,'" & one & _
+                                .CommandText = "Insert Into raw_material_table(RAW_ID,RAW_NAME)  values (NULL,'" & one &
                                                                                  "') ; INSERT INTO raw_expiration_date(Exp_Date_ID,RAW_QUANTITY,Unit_ID,RAW_EXPIRATION_DATE,Raw_ID) values " _
-                                                                                 & "(NULL, '" & CStr(TextBox2.Text) & "', (select Unit_ID from unit_table where Unit_Name = '" & CStr(TextBox3.Text) & _
+                                                                                 & "(NULL, '" & CStr(TextBox2.Text) & "', (select Unit_ID from unit_table where Unit_Name = '" & CStr(TextBox3.Text) &
                                                                                 "'),'" & four & "', LAST_INSERT_ID())"
                                 .ExecuteNonQuery()
                             End With
@@ -218,7 +218,6 @@ Public Class Add_Raw_Material
             End If
         End If
     End Sub
-
     Private Sub txtCQ1_KeyDown(sender As Object, e As KeyEventArgs) Handles txtCQ1.KeyDown
         If e.KeyCode = Keys.Enter Then
             cmbUNIT.Focus()
@@ -309,9 +308,7 @@ Public Class Add_Raw_Material
         Catch ex As Exception
         End Try
     End Sub
-
     Private Sub Add_Raw_Material_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
         Dim cvert As String = DateTimePicker1.Value.ToString()
         cvert = ""
         DateTimePicker1.CustomFormat = " "  'An empty SPACE
@@ -332,9 +329,7 @@ Public Class Add_Raw_Material
         End If
         cleartxtfield()
         Me.Hide()
-
         Modall.Enabled = True
-        ' Modall.Show()
     End Sub
     Private Sub cmbUNIT_TextChanged(sender As Object, e As EventArgs) Handles cmbUNIT.TextChanged
         If cmbUNIT.Text = "" Then
